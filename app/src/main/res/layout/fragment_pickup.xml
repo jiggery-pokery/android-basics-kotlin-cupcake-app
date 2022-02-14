@@ -24,6 +24,9 @@
         <variable
             name="viewModel"
             type="com.example.cupcake.model.OrderViewModel" />
+        <variable
+            name="pickupFragment"
+            type="com.example.cupcake.PickupFragment" />
     </data>
 
     <ScrollView
@@ -111,6 +114,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
+                android:onClick="@{() -> pickupFragment.goToNextScreen()}"
                 app:layout_constraintTop_toBottomOf="@id/subtotal" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
