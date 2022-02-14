@@ -53,7 +53,7 @@ class SummaryFragment : Fragment() {
         binding?.apply {
             viewModel = sharedViewModel
             sendButton.setOnClickListener { sendOrder() }
-            quantity.text = sharedViewModel.orderQuantity.value.toString()
+//            quantity.text = sharedViewModel.orderQuantity.value.toString()
         }
 
     }
