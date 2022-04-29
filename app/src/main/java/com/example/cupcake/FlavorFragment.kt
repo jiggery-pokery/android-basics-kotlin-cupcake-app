@@ -62,6 +62,11 @@ class FlavorFragment : Fragment() {
         }
     }
 
+    fun cancelOrder() {
+        sharedViewModel.resetOrder()
+        findNavController().navigate(R.id.action_flavorFragment_to_startFragment)
+    }
+
     /**
      * Navigate to the next screen to choose pickup date.
      */
